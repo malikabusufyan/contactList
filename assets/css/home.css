@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 2px;
+    color: rgb(49, 45, 45);
+    margin-top: 20px;
+}
+
+h1 i{
+    margin-left: 40px;
+    padding: 1px;
+}
+
+#contacts-list-container{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.contact{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px black solid; */
+    background-color: rgb(66, 158, 158);
+    color: whitesmoke;
+    margin: 2px;
+}
+
+.contact:hover{
+    background-color: black;
+}
+.details{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.delete{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.update{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#new_contact_form{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#new_contact_form input{
+
+    border: none;
+    border-bottom: 2px solid rgb(22, 17, 17);
+    padding: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#new_contact_form button[type="submit"]{
+  background-color: #202221;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* #update Form  */
+
+#update-contact-form-container {
+    margin: 20px 0;
+}
+
+#update_contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#update_contact_form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#update_contact_form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#update_contact_form button[type="submit"]:hover {
+    background-color: #a0a4a8;
+}
