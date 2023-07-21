@@ -75,7 +75,6 @@ app.post("/create-contact", function (req, res) {
   newContact
     .save()
     .then(() => {
-      console.log("Contact added successfully", newContact);
       return res.redirect("back");
     })
     .catch((err) => {
@@ -104,7 +103,6 @@ app.post("/update-contact/:id", function (req, res) {
     phone: req.body.phone,
   })
     .then(() => {
-      console.log("Contact updated successfully");
       return res.redirect("/");
     })
     .catch((err) => {
@@ -117,7 +115,6 @@ app.get("/delete-contact/", function (req, res) {
   let id = req.query.id;
   Contact.findByIdAndDelete(id)
     .then(() => {
-      console.log("Contact deleted successfully");
       return res.redirect("back");
     })
     .catch((err) => {
